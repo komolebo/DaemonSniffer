@@ -40,9 +40,7 @@ int main(int argc, char* argv[]) {
         if (pid > 0) {
             // Forming command: kill [PID]
             char command[20], c_pid[10];
-
             sprintf(c_pid, "%d", pid);
-
             strcpy(command, "kill ");
             strcat(command, c_pid);
 
