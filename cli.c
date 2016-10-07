@@ -76,15 +76,6 @@ int main(int argc, char* argv[]) {
 
     } else if (argc == 2 && !strcmp(argv[1], "stat")) {
         output(path_stat);
-
-    }
-
-    else if (!strcmp(argv[1], "test")) {
-        char * iface = malloc(20);
-
-        read_iface(path_iface, iface);
-
-        printf("%s\n", iface);
     }
 
     return 0;
