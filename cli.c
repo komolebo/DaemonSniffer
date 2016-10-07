@@ -76,8 +76,10 @@ int main(int argc, char* argv[]) {
 
     } else if (argc == 2 && !strcmp(argv[1], "stat")) {
         output(path_stat);
-    }
-
+        
+    } else
+        printf("No command found\n");
+    
     return 0;
 }
 
