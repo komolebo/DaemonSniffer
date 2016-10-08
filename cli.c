@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
 
     int status = -1;
     if (!strcmp(argv[1], "start")) {
-        int pid = read_pid(path_pid);   // create background worker
+        int pid = read_pid(path_pid);   // read id of previous running daemon
 
         if (pid > 0) {
             printf("Daemon already started\n");
